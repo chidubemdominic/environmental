@@ -1,0 +1,99 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.team-section{
+  width: 100%;
+}
+/*dis act like container(Bootsrap)*/
+.team-section .container1{
+  width: 80%;
+  margin: auto;
+}
+
+.team-section .container1 .row .title{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.team-section .container1 .row .title h1{
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #228B22;
+}
+
+.team-section .container1 .row .title p{
+  font-size: 18px;
+  font-family: sans-serif;
+  margin: 30px 0;
+}
+
+.team-section .container1 .team-card{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.team-section .container1 .team-card .card{
+  width: 100%;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.team-section .container1 .team-card .card:hover{
+  background-color: #f3f3f3;
+  transition: 0.3s;
+}
+
+.team-section .container1 .team-card .card .image-section img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+}
+
+.team-section .container1 .team-card .card .content{
+  width: 100%;
+  text-align: center;
+}
+
+.team-section .container1 .team-card .card .content h3{
+  font-size: 27px;
+  margin-top: 10px;
+  letter-spacing: 1.5px;
+  color: #00f300;
+}
+
+.team-section .container1 .team-card .card .content p{
+  font-size: 15px;
+  margin: 16px 0;
+  line-height: 1.5;
+  color: #6c6c6c;
+}
+
+@media screen and (max-width: 900px){
+  .team-section .container1 .team-card{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .team-section .container1 .team-card{
+    grid-template-columns: 1fr;
+  }
+}
+
+.logo-team{
+  width: 50px;
+  height: 50px;
+}
